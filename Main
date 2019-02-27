@@ -1,0 +1,14 @@
+package Example;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 Account account = new Account(31234, "Johnny", 23000);
+		 Account account1 = new Account(31235, "Johnny's wife", 560);
+		
+		 System.out.println("After transaction your balance is: "+account.transferTo(account1, 1450));
+		 
+		 System.out.println("After transaction balance Johnny's wife is: "+ account1.getBalance());
+		 System.out.println(account1.transferTo(account, 2500));
+}
+}
